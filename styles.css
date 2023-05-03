@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+
+body {
+  height: 97vh;
+  background-color: black;
+}
+
+form {
+  position: relative;
+  top: 4%;
+  justify-content: center;
+  z-index: 5;
+  padding: 1.5% 0 0 6.5%;
+  margin: auto;
+  bottom: 0;
+  width: 250px;
+}
+
+h1 {
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-19%);
+  top: 25.5%;
+}
+
+p {
+  color: white;
+}
+
+#everything {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  /*      (top, , bottom scrollbar, left ) */
+  padding: 17% 20% 15px 24%;
+  grid-gap: 5px 25px;
+  overflow-x: scroll;
+}
+
+#everything .item {
+  width: 310px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+#everything::-webkit-scrollbar {
+  width: 0;
+}
+
+#today {
+  border: solid white 2px;
+  background-color: #99f5b4;
+  border-radius: 1%;
+}
+
+#tomorrow {
+  border: solid white 2px;
+  background-color: #41ec74;
+  border-radius: 1%;
+}
+
+#dayAfter {
+  border: solid white 2px;
+  background-color: #99f5b4;
+  border-radius: 1%;
+}
+
+.labels {
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  background-color: transparent !important;
+}
+
+@media (max-width: 575px) {
+  #everything {
+    /*     (top, , bottom scrollbar, left ) */
+    padding: 45% 50px 15px 5vw;
+    justify-content: start;
+  }
+
+  form {
+    top: 69%;
+    padding: 5px;
+    z-index: 5;
+    right: 0%;
+    bottom: 0;
+    left: 3%;
+    width: 250px;
+  }
+
+  h1 {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 17%;
+  }
+
+  button {
+    border-radius: 2%;
+    height: 18px;
+  }
+}
+
+
